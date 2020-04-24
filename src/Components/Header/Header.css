@@ -1,0 +1,42 @@
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+@font-face {
+  font-family: 'pixelregular';
+  src: url('pixelbook-epg6-webfont.woff2') format('woff2'), url('pixelbook-epg6-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a:visited {
+  color: white;
+}
+
+.Header__logged-in {
+  display: flex;
+  flex-direction: column;
+}
+
+.Header h1 {
+  font-family: 'pixelregular';
+  font-size: 50px;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  margin-top: 10px;
+  border: 1.5px outset white;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}

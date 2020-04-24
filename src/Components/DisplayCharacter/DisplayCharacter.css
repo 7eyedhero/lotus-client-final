@@ -1,0 +1,33 @@
+#placeholder {
+  width: 150px;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inventory {
+  display: flex;
+  border: 2px dotted grey;
+  height: 35px;
+  width: 320px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.award {
+  width: 35px;
+  height: 35px;
+  background-color: grey;
+}
+
+#chara-info {
+  display: flex;
+  border: 2px dotted grey;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-evenly;
+}

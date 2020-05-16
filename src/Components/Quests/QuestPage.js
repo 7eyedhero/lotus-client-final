@@ -29,10 +29,12 @@ class QuestPage extends Component {
 
   handleFight = () => {
     const { quest, character } = this.context;
-    if (quest.target_def > character.attack_power || quest.target_atk > character.defense_power) {
-      this.props.history.push(`/quest_result_lose`);
+    console.log(quest);
+    console.log(character);
+    if (quest.target_def > character.attack_power) {
+      this.props.history.push(`/quest_result_lose/1`);
     } else {
-      this.props.history.push('/quest_result_win');
+      this.props.history.push('/quest_result_win/1');
     }
   };
 

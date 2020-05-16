@@ -23,16 +23,16 @@ class QuestButton extends Component {
     QuestApiService.getCurrentQuest(this.state.activeQuestIndex + 1)
       .then(this.context.setQuest)
       .catch(this.context.setError);
-    this.context.markComplete();
   };
 
   renderItem(quest, idx, activeQuestIndex) {
     let questName;
     if (this.context.quest_1_result === 'failed') {
       questName = 'FAILED';
-    } else if (this.context.quest_1_result === null && idx === 1) {
+    } else if (this.context.quest_1_result === null && idx === 0) {
       questName = quest.name;
-      console.log(quest);
+    } else if (this.context.quest_2_result === null && idx === 1) {
+      questName = quest.name;
     } else if (this.context.quest_1_result === 'success' && idx === 1) {
       questName = 'SUCCESS!';
     } else {

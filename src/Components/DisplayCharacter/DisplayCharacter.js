@@ -35,8 +35,6 @@ class DisplayCharacter extends Component {
     TreeApiService.getMemberChara(user).then(this.context.setCharacter).catch(this.context.setError);
 
     QuestApiService.getQuests().then(this.context.setQuest).catch(this.context.setError);
-
-    console.log(this.context.quest);
   }
 
   componentWillUnmount() {
@@ -107,7 +105,7 @@ class DisplayCharacter extends Component {
             </Link>
           </section>
         ) : (
-          <p className='red'>There was an error</p>
+          <p className='red'>There was an error{console.log(error)}</p>
         );
     } else {
       content = this.renderCharacter();

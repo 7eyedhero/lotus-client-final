@@ -6,9 +6,6 @@ import QuestApiService from '../../services/quest-api-service';
 
 class QuestButton extends Component {
   static contextType = CharacterContext;
-  static defaultProps = {
-    quest: []
-  };
 
   state = {
     activeQuestIndex: null
@@ -72,12 +69,13 @@ class QuestButton extends Component {
 
   render() {
     const { activeQuestIndex } = this.state;
-    const { quest } = this.props;
+    const { questList } = this.context;
+    console.log('questlog', questList);
     return (
       <div className='skill-branch'>
         <p />
         <section className='Accordion'>
-          {quest.map((quest, idx) => this.renderItem(quest, idx, activeQuestIndex))}
+          {questList.map((quest, idx) => this.renderItem(quest, idx, activeQuestIndex))}
         </section>
       </div>
     );

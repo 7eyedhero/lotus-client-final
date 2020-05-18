@@ -33,19 +33,20 @@ class DisplayCharacter extends Component {
 
     this.context.clearError();
     TreeApiService.getMemberChara(user).then(this.context.setCharacter).catch(this.context.setError);
+    console.log(this.context.setCharacter);
 
-    QuestApiService.getQuests().then(this.context.setQuest).catch(this.context.setError);
+    QuestApiService.getQuests().then(this.context.setQuestList).catch(this.context.setError);
   }
 
-  componentWillUnmount() {
-    this.context.clearCharacter();
-    this.context.clearQuest();
-  }
+  // componentWillUnmount() {
+  //   this.context.clearCharacter();
+  //   this.context.clearQuest();
+  // }
 
   renderCharacter() {
     const { character } = this.context;
-    const { quest } = this.context;
-    console.log(quest);
+    const { questList } = this.context;
+    console.log('ty', questList);
     Moment.locale('en');
     var dt = character.date_created;
 
@@ -86,7 +87,7 @@ class DisplayCharacter extends Component {
         <div className='inventory' />
         <h2>Quests</h2>
         <p id='disclaimer'>*Quests will be updated periodically*</p>
-        <QuestButton quest={quest} />
+        <QuestButton quest={questList} />
       </section>
     );
   }

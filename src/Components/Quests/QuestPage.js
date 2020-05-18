@@ -27,17 +27,22 @@ class QuestPage extends Component {
     this.context.clearQuest();
   }
 
-  handleFight = () => {
+  handleFight1 = () => {
     const { quest, character } = this.context;
-    console.log(quest);
-    console.log(character);
     if (quest.target_def > character.attack_power) {
       this.props.history.push(`/quest_result_lose/1`);
     } else {
       this.props.history.push('/quest_result_win/1');
     }
   };
-
+  handleFight2 = () => {
+    const { quest, character } = this.context;
+    if (quest.target_atk > character.defense_power) {
+      this.props.history.push(`/quest_result_lose/2`);
+    } else {
+      this.props.history.push('/quest_result_win/2');
+    }
+  };
   handleCowardice = () => {
     this.props.history.push('/lotus');
     this.context.clearQuest();
@@ -63,7 +68,7 @@ class QuestPage extends Component {
             <strong>Target defense power:</strong> {quest.target_def}
           </span>
           <br />
-          <input type='button' value='Fight!' onClick={this.handleFight} />
+          <input type='button' value='Fight!' onClick={this.handleFight1} />
         </section>
       );
     } else {
@@ -81,7 +86,7 @@ class QuestPage extends Component {
             <strong>Target attack power:</strong> {quest.target_atk}
           </span>
           <br />
-          <input type='button' value='Fight!' onClick={this.handleFight} />
+          <input type='button' value='Fight!' onClick={this.handleFight2} />
         </section>
       );
     }

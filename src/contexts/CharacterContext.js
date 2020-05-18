@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 const CharacterContext = React.createContext({
   character: [],
-  quest: [],
+  quest: {},
+  questList: [],
   quest_1_result: null,
   quest_2_result: null,
   error: null,
@@ -19,7 +20,8 @@ export default CharacterContext;
 export class CharacterProvider extends Component {
   state = {
     character: [],
-    quest: [],
+    quest: {},
+    questList: [],
     quest_1_result: null,
     quest_2_result: null,
     error: null
@@ -46,6 +48,10 @@ export class CharacterProvider extends Component {
     this.setState({ quest });
   };
 
+  setQuestList = (questList) => {
+    this.setState({ questList });
+  };
+
   clearQuest = () => {
     this.setQuest([]);
   };
@@ -54,6 +60,7 @@ export class CharacterProvider extends Component {
     const value = {
       character: this.state.character,
       quest: this.state.quest,
+      questList: this.state.questList,
       quest_1_result: this.state.quest_1_result,
       quest_2_result: this.state.quest_2_result,
       error: this.state.error,
@@ -62,6 +69,7 @@ export class CharacterProvider extends Component {
       setCharacter: this.setCharacter,
       clearCharacter: this.clearCharacter,
       setQuest: this.setQuest,
+      setQuestList: this.setQuestList,
       clearQuest: this.clearQuest
     };
     return <CharacterContext.Provider value={value}>{this.props.children}</CharacterContext.Provider>;

@@ -21,6 +21,9 @@ const TokenService = {
     const token = TokenService.getAuthToken();
 
     const decoded = jwtDecode(token);
+
+    console.log('token', token);
+    console.log('decoded', decoded);
     return decoded;
   }
 };

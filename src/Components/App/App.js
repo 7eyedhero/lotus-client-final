@@ -7,7 +7,7 @@ import PublicRoute from '../Utils/PublicRoute';
 import LandingPage from '../LandingPage/LandingPage';
 import RegisterRoute from '../../routes/RegisterRoute';
 import LoginRoute from '../../routes/LoginRoute';
-import TreeRoute from '../../routes/TreeRoute';
+import MainRoute from '../../routes/MainRoute';
 import NotFoundPage from '../../routes/NotFoundPage';
 import CharacterRoute from '../../routes/CharacterRoute';
 import QuestRoute from '../../routes/QuestRoute';
@@ -33,7 +33,7 @@ class App extends Component {
             <PublicRoute exact path={'/'} component={LandingPage} />
             <PublicRoute path={'/createaccount'} component={RegisterRoute} />
             <PublicRoute path={'/login'} component={LoginRoute} />
-            <PrivateRoute path={'/lotus'} component={TreeRoute} />
+            <PrivateRoute path={'/lotus'} component={MainRoute} />
             <PrivateRoute path={'/createcharacter'} component={CharacterRoute} />
             <PrivateRoute path={'/quests'} component={QuestRoute} />
             <PrivateRoute path={'/quest_result_win'} component={QuestResult_win} />

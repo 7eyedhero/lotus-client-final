@@ -23,7 +23,6 @@ export default class LoginRoute extends Component {
   render() {
     return (
       <Section className='LoginPage'>
-        <h2>Login</h2>
         <LoginPage onLoginSuccess={this.handleLoginSuccess} />
       </Section>
     );

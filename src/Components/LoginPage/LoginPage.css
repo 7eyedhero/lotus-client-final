@@ -1,0 +1,19 @@
+.log-in {
+  margin-top: 20px;
+  border: 5px double black;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-bottom: 20px;
+}
+
+.log-in h1 {
+  font-family: 'Merienda One', Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 700px) {
+  .log-in {
+    display: inline-block;
+    width: 300px;
+    padding-bottom: 50px;
+  }
+}

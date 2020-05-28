@@ -23,7 +23,6 @@ export default class CharacterRoute extends Component {
   render() {
     return (
       <Section className='RegistrationPage'>
-        <h2>Register</h2>
         <CreateCharacter onCreationSuccess={this.handleCreationSuccess} />
       </Section>
     );

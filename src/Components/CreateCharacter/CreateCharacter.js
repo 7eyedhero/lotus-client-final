@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TreeApiService from '../../services/tree-api-service';
+import './CreateCharacter.css';
 
 export default class CreateCharacter extends Component {
   static defaultProps = {
@@ -28,14 +29,16 @@ export default class CreateCharacter extends Component {
 
   render() {
     return (
-      <div>
+      <div className='creator'>
         <h1>Create Your Character!</h1>
         <form className='character-creation-form' onSubmit={this.handleSubmit}>
           <label>Name: </label>
+          <br />
           <input type='text' name='name' />
           <br />
           <br />
           <label>Gender: </label>
+          <br />
           <select name='gender'>
             <option value='Male'>Male</option>
             <option value='Female'>Female</option>
@@ -44,6 +47,7 @@ export default class CreateCharacter extends Component {
           <br />
           <br />
           <label>Class: </label>
+          <br />
           <select name='character_class'>
             <option value='Knight'>Knight</option>
             <option value='Paladin'>Paladin</option>
@@ -51,12 +55,14 @@ export default class CreateCharacter extends Component {
           <br />
           <br />
           <label>Kingdom: </label>
+          <br />
           <select name='kingdom'>
             <option value='Ignis'>Ignis</option>
             <option value='Oceani'>Oceani</option>
             <option value='Ventus'>Ventus</option>
             <option value='Terra'>Terra</option>
           </select>
+          <br />
           <br />
           <br />
           <input type='submit' value='Create Character!' />

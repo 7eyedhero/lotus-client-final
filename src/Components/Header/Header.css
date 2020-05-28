@@ -1,11 +1,10 @@
 a {
   color: white;
 }
-
-a:visited {
-  color: white;
+.App-header {
+  background-color: rgb(84, 122, 84);
+  border: 10px double white;
 }
-
 @font-face {
   font-family: 'pixelregular';
   src: url('pixelbook-epg6-webfont.woff2') format('woff2'), url('pixelbook-epg6-webfont.woff') format('woff');
@@ -20,6 +19,7 @@ a:visited {
 .Header__logged-in {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .Header h1 {
@@ -32,11 +32,35 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  font-weight: 500;
+}
+
 .link {
+  font-size: 18px;
   margin-top: 10px;
-  border: 1.5px outset white;
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 3px;
   padding-bottom: 3px;
+}
+
+@media only screen and (min-width: 600px) {
+  .App-header {
+    display: flex;
+  }
+  nav h1 {
+    top: 5%;
+  }
+  .Header__not-logged-in {
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 30px;
+  }
+  .Header__logged-in {
+    font-size: 24px;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 30px;
+  }
 }

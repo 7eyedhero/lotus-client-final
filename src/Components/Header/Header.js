@@ -21,7 +21,7 @@ export default class Header extends Component {
           Welcome, <strong>{TokenService.getInfoFromToken().sub}</strong>!
         </span>
         <Link className='link' onClick={this.handleLogoutClick} to='/login'>
-          Logout
+          Log Out
         </Link>
       </div>
     );

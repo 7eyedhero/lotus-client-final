@@ -4,8 +4,6 @@ const CharacterContext = React.createContext({
   character: [],
   quest: {},
   questList: [],
-  quest_1_result: null,
-  quest_2_result: null,
   error: null,
   setError: () => {},
   clearError: () => {},
@@ -22,8 +20,6 @@ export class CharacterProvider extends Component {
     character: [],
     quest: {},
     questList: [],
-    quest_1_result: null,
-    quest_2_result: null,
     error: null
   };
 
@@ -61,8 +57,6 @@ export class CharacterProvider extends Component {
       character: this.state.character,
       quest: this.state.quest,
       questList: this.state.questList,
-      quest_1_result: this.state.quest_1_result,
-      quest_2_result: this.state.quest_2_result,
       error: this.state.error,
       setError: this.setError,
       clearError: this.clearError,

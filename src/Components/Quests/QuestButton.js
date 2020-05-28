@@ -23,14 +23,20 @@ class QuestButton extends Component {
   };
 
   renderItem(quest, idx, activeQuestIndex) {
+    console.log(quest.result);
+    let quests = this.context.questList;
     let questName;
-    if (this.context.quest_1_result === 'failed') {
+    if (quests[1].result === false && idx === 1) {
       questName = 'FAILED';
-    } else if (this.context.quest_1_result === null && idx === 0) {
+    } else if (quests[0].result === undefined && idx === 0) {
       questName = quest.name;
-    } else if (this.context.quest_2_result === null && idx === 1) {
+    } else if (quests[0].result === false && idx === 0) {
+      questName = 'FAILED';
+    } else if (quests[0].result === true && idx === 0) {
+      questName = 'SUCCESS!';
+    } else if (quests[1].result === undefined && idx === 1) {
       questName = quest.name;
-    } else if (this.context.quest_1_result === 'success' && idx === 1) {
+    } else if (quests[1].result === true && idx === 1) {
       questName = 'SUCCESS!';
     } else {
       questName = 'error';
@@ -42,14 +48,16 @@ class QuestButton extends Component {
           id='quest-button'
           type='button'
           onClick={() => {
-            if (this.state.activeQuestIndex === null) {
+            if (this.state.activeQuestIndex === null && quest.result === undefined) {
               this.handleSetActiveQuest(idx);
+            } else if (quest.result === true || quest.result === false) {
+              this.handleSetActiveQuest(null);
             } else {
               this.handleSetActiveQuest(null);
             }
           }}
         >
-          {idx + 1} {questName}
+          {questName}
         </button>
         {activeQuestIndex === idx && (
           <p id='quest-desc'>
@@ -72,7 +80,7 @@ class QuestButton extends Component {
     const { questList } = this.context;
     console.log('questlog', questList);
     return (
-      <div className='skill-branch'>
+      <div className='branch'>
         <p />
         <section className='Accordion'>
           {questList.map((quest, idx) => this.renderItem(quest, idx, activeQuestIndex))}

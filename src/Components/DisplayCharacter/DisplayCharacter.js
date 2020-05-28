@@ -38,10 +38,10 @@ class DisplayCharacter extends Component {
     QuestApiService.getQuests().then(this.context.setQuestList).catch(this.context.setError);
   }
 
-  // componentWillUnmount() {
-  //   this.context.clearCharacter();
-  //   this.context.clearQuest();
-  // }
+  componentWillUnmount() {
+    this.context.clearCharacter();
+    this.context.clearQuest();
+  }
 
   renderCharacter() {
     const { character } = this.context;
@@ -85,9 +85,11 @@ class DisplayCharacter extends Component {
           </div>
         </section>
         <div className='inventory' />
-        <h2>Quests</h2>
-        <p id='disclaimer'>*Quests will be updated periodically*</p>
-        <QuestButton quest={questList} />
+        <div className='quests'>
+          <h2>Quests</h2>
+          <p id='disclaimer'>*Quests will be updated periodically*</p>
+          <QuestButton quest={questList} />
+        </div>
       </section>
     );
   }
@@ -113,6 +115,7 @@ class DisplayCharacter extends Component {
     }
     return (
       <Section className='characterPage'>
+        <h1>Your Character</h1>
         {content} <Stats character={character} />
       </Section>
     );

@@ -1,3 +1,38 @@
 a:visited {
   color: white;
 }
+p {
+  font-size: 18px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+img {
+  max-height: 250px;
+}
+
+.Landing h1 {
+  color: rgb(100, 100, 100);
+  font-family: 'Merienda One', Helvetica, sans-serif;
+  font-style: italic;
+}
+
+@media only screen and (min-width: 1000px) {
+  p {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  img {
+    max-height: 500px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  p {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  img {
+    max-height: 400px;
+  }
+}

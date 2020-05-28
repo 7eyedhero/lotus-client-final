@@ -10,11 +10,15 @@
   display: flex;
   border: 2px dotted grey;
   height: 35px;
-  width: 320px;
+  max-width: 92%;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
   padding: 5px;
+}
+
+.characterPage h1 {
+  font-family: 'Merienda One', Helvetica, sans-serif;
 }
 
 .award {
@@ -30,4 +34,20 @@
   margin-left: 20px;
   margin-right: 20px;
   justify-content: space-evenly;
+}
+
+.quests {
+  margin-top: 20px;
+  border: 2px dotted grey;
+}
+
+@media only screen and (min-width: 700px) {
+  #main-interface {
+    display: inline-block;
+  }
+  #chara-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

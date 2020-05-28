@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import Tree from '../Components/Tree/Tree';
+import DisplayCharacter from '../Components/DisplayCharacter/DisplayCharacter';
 
 export default class TreeRoute extends Component {
   render() {
     return (
       <div>
-        <h1>Your Character</h1>
-        <Tree />
+        <DisplayCharacter />
       </div>
     );
   }

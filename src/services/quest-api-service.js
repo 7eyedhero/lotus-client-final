@@ -3,7 +3,7 @@ import config from '../config';
 
 const QuestApiService = {
   getQuests() {
-    return fetch(`${config.API_ENDPOINT}/quests`, {
+    return fetch(`${config.API_ENDPOINT}/quests/own`, {
       headers: {
         authorization: `bearer ${TokenService.getAuthToken()}`
       }

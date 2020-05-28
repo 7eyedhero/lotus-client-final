@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+//NOTE: THIS PAGE IS FOR A FUTURE FEATURE IMPLEMENTATION. PLEASE DISREGARD.
+
 class Stats extends Component {
   static defaultProps = {
     stats: []

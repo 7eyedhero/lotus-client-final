@@ -1,5 +1,5 @@
 import config from '../config';
-var jwtDecode = require('jwt-decode');
+const jwtDecode = require('jwt-decode');
 
 const TokenService = {
   saveAuthToken(token) {

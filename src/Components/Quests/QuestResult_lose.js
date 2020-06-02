@@ -27,7 +27,7 @@ export default class QuestResult_lose extends Component {
       })
       .catch(this.context.setError);
     console.log(this.context.quest);
-    QuestApiService.postResults(user, this.context.quest.id, false).catch((res) => {
+    QuestApiService.postResults(this.context.quest.id, user, false).catch((res) => {
       this.setState({ error: res.error });
     });
     this.props.history.push('/lotus');

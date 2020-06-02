@@ -23,7 +23,6 @@ class QuestButton extends Component {
   };
 
   renderItem(quest, idx, activeQuestIndex) {
-    console.log(quest.result);
     let quests = this.context.questList;
     let questName;
     if (quests[1].result === false && idx === 1) {

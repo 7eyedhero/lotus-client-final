@@ -29,7 +29,7 @@ export default class QuestResult_win extends Component {
       })
       .catch(this.context.setError);
     console.log(this.context.quest);
-    QuestApiService.postResults(user, this.context.quest.id, true).catch((res) => {
+    QuestApiService.postResults(this.context.quest.id, user, true).catch((res) => {
       this.setState({ error: res.error });
     });
     this.props.history.push('/lotus');

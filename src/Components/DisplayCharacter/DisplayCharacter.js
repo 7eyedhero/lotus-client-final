@@ -10,6 +10,8 @@ import '../DisplayCharacter/ok.jpg';
 import Stats from '../DisplayCharacter/Stats';
 import QuestButton from '../Quests/QuestButton';
 import QuestApiService from '../../services/quest-api-service';
+import robberhead from '../DisplayCharacter/robberhead.png';
+import spiderhead from '../DisplayCharacter/spiderhead.png';
 
 class DisplayCharacter extends Component {
   static defaultProps = {
@@ -26,10 +28,9 @@ class DisplayCharacter extends Component {
   };
 
   static contextType = CharacterContext;
+
   componentDidMount() {
     const user = TokenService.getInfoFromToken().user_id;
-
-    console.log(user);
 
     this.context.clearError();
     TreeApiService.getMemberChara(user).then(this.context.setCharacter).catch(this.context.setError);
@@ -46,9 +47,31 @@ class DisplayCharacter extends Component {
   renderCharacter() {
     const { character } = this.context;
     const { questList } = this.context;
-    console.log('ty', questList);
     Moment.locale('en');
-    var dt = character.date_created;
+    const dt = character.date_created;
+    let quest1 = questList[0];
+    let quest2 = questList[1];
+    console.log(questList, this.context.questList, this.quest1, this.quest2);
+    let award = null;
+    let pic;
+
+    if (questList !== []) {
+      if (quest1.id) {
+        award = spiderhead;
+      } else if (quest2.id) {
+        award = robberhead;
+      } else {
+        award = null;
+      }
+    } else {
+      award = null;
+    }
+
+    if (award === null) {
+      pic = null;
+    } else {
+      pic = <img className='award' src={award} alt='This is your award for completing a quest!' />;
+    }
 
     return (
       <section id='main-interface'>
@@ -56,6 +79,7 @@ class DisplayCharacter extends Component {
           <div id='placeholder'>
             <img id='img' src={require('./ok.jpg')} alt='i tried' />
           </div>
+          <br />
           <div id='chara-stats'>
             <span>
               <strong>Name: </strong>
@@ -84,7 +108,7 @@ class DisplayCharacter extends Component {
             <br />
           </div>
         </section>
-        <div className='inventory' />
+        <div className='inventory'>{pic}</div>
         <div className='quests'>
           <h2>Quests</h2>
           <p id='disclaimer'>*Quests will be updated periodically*</p>

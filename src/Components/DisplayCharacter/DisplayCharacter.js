@@ -56,9 +56,9 @@ class DisplayCharacter extends Component {
     let pic;
 
     if (questList !== []) {
-      if (quest1.id) {
+      if (quest1 && quest1.result) {
         award = spiderhead;
-      } else if (quest2.id) {
+      } else if (quest2 && quest2.result) {
         award = robberhead;
       } else {
         award = null;

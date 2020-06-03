@@ -10,6 +10,7 @@ const CharacterContext = React.createContext({
   setCharacter: () => {},
   clearCharacter: () => {},
   setQuest: () => {},
+  setQuestList: () => {},
   clearQuest: () => {}
 });
 

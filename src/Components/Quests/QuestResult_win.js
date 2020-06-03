@@ -17,7 +17,6 @@ export default class QuestResult_win extends Component {
     this.context.clearError();
     TreeApiService.getMemberChara(user).then(this.context.setCharacter).catch(this.context.setError);
     QuestApiService.getCurrentQuest(page).then(this.context.setQuest).catch(this.context.setError);
-    console.log(this.context.quest);
   }
 
   handleHome = (e) => {
@@ -28,7 +27,6 @@ export default class QuestResult_win extends Component {
         this.context.setQuestList(q);
       })
       .catch(this.context.setError);
-    console.log(this.context.quest);
     QuestApiService.postResults(this.context.quest.id, user, true).catch((res) => {
       this.setState({ error: res.error });
     });

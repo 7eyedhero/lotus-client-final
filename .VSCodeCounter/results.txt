@@ -1,0 +1,96 @@
+Date : 2020-06-02 22:04:59
+Directory : c:\Users\autog\projects\LOTUS\lotus-client-final
+Total : 53 files,  16990 codes, 42 comments, 248 blanks, all 17280 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          4 |     15,444 |          0 |          4 |     15,448 |
+| JavaScript |         37 |      1,266 |         32 |        174 |      1,472 |
+| CSS        |         10 |        225 |          0 |         36 |        261 |
+| Markdown   |          1 |         37 |          0 |         32 |         69 |
+| HTML       |          1 |         18 |         10 |          2 |         30 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                      | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                         |         53 |     16,990 |         42 |        248 |     17,280 |
+| public                                                                                                    |          2 |         27 |         10 |          3 |         40 |
+| src                                                                                                       |         47 |      1,491 |         32 |        210 |      1,733 |
+| src\Components                                                                                            |         31 |      1,111 |         22 |        146 |      1,279 |
+| src\Components\App                                                                                        |          3 |         75 |          0 |         10 |         85 |
+| src\Components\CreateCharacter                                                                            |          3 |         87 |          0 |         11 |         98 |
+| src\Components\DisplayCharacter                                                                           |          4 |        212 |         21 |         31 |        264 |
+| src\Components\Header                                                                                     |          2 |        108 |          0 |         14 |        122 |
+| src\Components\LandingPage                                                                                |          3 |         63 |          0 |          9 |         72 |
+| src\Components\LoginPage                                                                                  |          3 |         78 |          0 |         11 |         89 |
+| src\Components\Quests                                                                                     |          7 |        337 |          0 |         38 |        375 |
+| src\Components\RegisterPage                                                                               |          3 |         88 |          0 |         10 |         98 |
+| src\Components\Utils                                                                                      |          3 |         63 |          1 |         12 |         76 |
+| src\contexts                                                                                              |          2 |        100 |          0 |         20 |        120 |
+| src\routes                                                                                                |          6 |        121 |          6 |         24 |        151 |
+| src\services                                                                                              |          4 |        125 |          0 |         14 |        139 |
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                  | language   | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\autog\projects\LOTUS\lotus-client-final\README.md                                                | Markdown   |         37 |          0 |         32 |         69 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\package-lock.json                                        | JSON       |     15,399 |          0 |          1 |     15,400 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\package.json                                             | JSON       |         32 |          0 |          1 |         33 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\public\index.html                                        | HTML       |         18 |         10 |          2 |         30 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\public\manifest.json                                     | JSON       |          9 |          0 |          1 |         10 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\App\App.css                               | CSS        |         16 |          0 |          3 |         19 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\App\App.js                                | JavaScript |         45 |          0 |          5 |         50 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\App\App.test.js                           | JavaScript |         14 |          0 |          2 |         16 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\CreateCharacter\CreateCharacter.css       | CSS        |         11 |          0 |          2 |         13 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\CreateCharacter\CreateCharacter.js        | JavaScript |         68 |          0 |          7 |         75 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\CreateCharacter\CreateCharacter.test.js   | JavaScript |          8 |          0 |          2 |         10 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\DisplayCharacter\DisplayCharacter.css     | CSS        |         48 |          0 |          7 |         55 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\DisplayCharacter\DisplayCharacter.js      | JavaScript |        135 |          0 |         15 |        150 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\DisplayCharacter\DisplayCharacter.test.js | JavaScript |          8 |          0 |          2 |         10 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\DisplayCharacter\Stats.js                 | JavaScript |         21 |         21 |          7 |         49 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\Header\Header.css                         | CSS        |         59 |          0 |          8 |         67 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\Header\Header.js                          | JavaScript |         49 |          0 |          6 |         55 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\LandingPage\LandingPage.css               | CSS        |         34 |          0 |          5 |         39 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\LandingPage\LandingPage.js                | JavaScript |         21 |          0 |          2 |         23 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\LandingPage\LandingPage.test.js           | JavaScript |          8 |          0 |          2 |         10 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\LoginPage\LoginPage.css                   | CSS        |         17 |          0 |          3 |         20 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\LoginPage\LoginPage.js                    | JavaScript |         53 |          0 |          6 |         59 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\LoginPage\LoginPage.test.js               | JavaScript |          8 |          0 |          2 |         10 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\Quests\QuestButton.css                    | CSS        |          8 |          0 |          2 |         10 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\Quests\QuestButton.js                     | JavaScript |         83 |          0 |         10 |         93 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\Quests\QuestPage.css                      | CSS        |          3 |          0 |          1 |          4 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\Quests\QuestPage.js                       | JavaScript |        110 |          0 |         10 |        120 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\Quests\QuestResult_lose.js                | JavaScript |         47 |          0 |          5 |         52 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\Quests\QuestResult_win.js                 | JavaScript |         60 |          0 |          5 |         65 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\Quests\Quests.test.js                     | JavaScript |         26 |          0 |          5 |         31 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\RegisterPage\RegisterPage.css             | CSS        |         17 |          0 |          3 |         20 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\RegisterPage\RegisterPage.js              | JavaScript |         63 |          0 |          5 |         68 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\RegisterPage\RegisterPage.test.js         | JavaScript |          8 |          0 |          2 |         10 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\Utils\PrivateRoute.js                     | JavaScript |         22 |          0 |          2 |         24 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\Utils\PublicRoute.js                      | JavaScript |         13 |          0 |          2 |         15 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\Components\Utils\Utils.js                            | JavaScript |         28 |          1 |          8 |         37 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\config.js                                            | JavaScript |          4 |          0 |          1 |          5 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\contexts\CharacterContext.js                         | JavaScript |         61 |          0 |         12 |         73 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\contexts\HeaderContext.js                            | JavaScript |         39 |          0 |          8 |         47 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\index.css                                            | CSS        |         12 |          0 |          2 |         14 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\index.js                                             | JavaScript |         17 |          0 |          2 |         19 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\routes\CharacterRoute.js                             | JavaScript |         26 |          0 |          5 |         31 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\routes\LoginRoute.js                                 | JavaScript |         26 |          0 |          5 |         31 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\routes\MainRoute.js                                  | JavaScript |         11 |          0 |          2 |         13 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\routes\NotFoundPage.js                               | JavaScript |         12 |          0 |          2 |         14 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\routes\QuestRoute.js                                 | JavaScript |         20 |          6 |          5 |         31 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\routes\RegisterRoute.js                              | JavaScript |         26 |          0 |          5 |         31 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\services\auth-api-service.js                         | JavaScript |         31 |          0 |          3 |         34 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\services\quest-api-service.js                        | JavaScript |         33 |          0 |          2 |         35 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\services\token-service.js                            | JavaScript |         27 |          0 |          5 |         32 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\services\tree-api-service.js                         | JavaScript |         34 |          0 |          4 |         38 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\src\setupTests.js                                        | JavaScript |          1 |          4 |          1 |          6 |
+| c:\Users\autog\projects\LOTUS\lotus-client-final\vercel.json                                              | JSON       |          4 |          0 |          1 |          5 |
+| Total                                                                                                     |            |     16,990 |         42 |        248 |     17,280 |
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

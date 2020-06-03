@@ -13,13 +13,6 @@ export default class QuestRoute extends Component {
     }
   };
 
-  //   handleCreationSuccess = () => {
-  //     const { location, history } = this.props;
-  //     const destination = (location.state || {}).from || '/lotus';
-  //     history.push(destination);
-  //     this.context.setLogIn();
-  //   };
-
   render() {
     return (
       <Section className='QuestPage'>

@@ -26,7 +26,6 @@ export default class QuestResult_lose extends Component {
         this.context.setQuestList(q);
       })
       .catch(this.context.setError);
-    console.log(this.context.quest);
     QuestApiService.postResults(this.context.quest.id, user, false).catch((res) => {
       this.setState({ error: res.error });
     });

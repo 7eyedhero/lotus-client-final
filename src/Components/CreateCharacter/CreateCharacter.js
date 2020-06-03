@@ -13,14 +13,10 @@ export default class CreateCharacter extends Component {
     ev.preventDefault();
     this.setState({ error: null });
     const { name, gender, character_class, kingdom } = ev.target;
-
-    console.log(ev.target);
-
     TreeApiService.postCharacter(name.value, gender.value, character_class.value, kingdom.value)
       .then(() => {
         name.value = '';
         this.props.onCreationSuccess();
-        console.log('Success');
       })
       .catch((res) => {
         this.setState({ error: res.error });

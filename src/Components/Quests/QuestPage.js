@@ -50,7 +50,6 @@ class QuestPage extends Component {
 
   render() {
     const { character, quest } = this.context;
-    console.log(quest);
     let battle;
 
     if (quest.mission_type === 'attack_mission') {

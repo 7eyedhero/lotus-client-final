@@ -48,7 +48,6 @@ class DisplayCharacter extends Component {
     const dt = character.date_created;
     let quest1 = questList[0];
     let quest2 = questList[1];
-    console.log(questList, this.context.questList, this.quest1, this.quest2);
     let award = null;
     let pic;
 
@@ -129,7 +128,7 @@ class DisplayCharacter extends Component {
             </Link>
           </section>
         ) : (
-          <p className='red'>There was an error{console.log(error)}</p>
+          <p className='red'>There was an error</p>
         );
     } else {
       content = this.renderCharacter();

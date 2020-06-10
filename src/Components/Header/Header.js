@@ -16,7 +16,6 @@ export default class Header extends Component {
   renderLogoutLink() {
     return (
       <div className='Header__logged-in'>
-        {console.log(TokenService.getInfoFromToken())}
         <span>
           Welcome, <strong>{TokenService.getInfoFromToken().sub}</strong>!
         </span>

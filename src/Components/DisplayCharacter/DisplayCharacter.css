@@ -7,6 +7,10 @@
   flex-direction: column;
 }
 
+#note {
+  font-size: 12px;
+}
+
 .inventory {
   display: flex;
   border: 2px dotted grey;

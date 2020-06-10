@@ -48,7 +48,7 @@ class DisplayCharacter extends Component {
     const dt = character.date_created;
     let quest1 = questList[0];
     let quest2 = questList[1];
-    let award = null;
+    let award = 'Your awards will appear here.';
     let pic;
 
     if (questList !== []) {
@@ -57,10 +57,10 @@ class DisplayCharacter extends Component {
       } else if (quest2 && quest2.result) {
         award = robberhead;
       } else {
-        award = null;
+        award = 'Your awards will appear here.';
       }
     } else {
-      award = null;
+      award = 'Your awards will appear here.';
     }
 
     if (award === null) {

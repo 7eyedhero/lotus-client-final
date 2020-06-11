@@ -51,6 +51,7 @@ class DisplayCharacter extends Component {
     let award = null;
     let pic;
 
+    //This checks to see if an award needs to be rendered.
     if (questList !== []) {
       if (quest1 && quest1.result) {
         award = spiderhead;

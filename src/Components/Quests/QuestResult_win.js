@@ -10,6 +10,7 @@ export default class QuestResult_win extends Component {
   static contextType = CharacterContext;
 
   componentDidMount() {
+    //This makes sure the quest result is in-line with the award.
     const user = TokenService.getInfoFromToken().user_id;
     const str = this.props.location.pathname;
     const str2 = str.split('/').pop();

@@ -23,6 +23,7 @@ class QuestButton extends Component {
   };
 
   renderItem(quest, idx, activeQuestIndex) {
+    //This checks to see if you have failed or completed a quest and renders the button accordinly.
     let quests = this.context.questList;
     let questName;
     if (quests[1].result === false && idx === 1) {

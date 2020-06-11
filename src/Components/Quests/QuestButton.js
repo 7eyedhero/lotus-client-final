@@ -77,6 +77,7 @@ class QuestButton extends Component {
   render() {
     const { activeQuestIndex } = this.state;
     const { questList } = this.context;
+
     return (
       <div className='branch'>
         <p />

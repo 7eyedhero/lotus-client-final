@@ -11,6 +11,12 @@
   font-size: 12px;
 }
 
+label.awardHead {
+  font-family: 'Merienda One', Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .inventory {
   display: flex;
   border: 2px dotted grey;
@@ -18,7 +24,7 @@
   max-width: 92%;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 5px;
 }
 
@@ -39,6 +45,7 @@
   margin-left: 20px;
   margin-right: 20px;
   justify-content: space-evenly;
+  margin-bottom: 20px;
 }
 
 .quests {

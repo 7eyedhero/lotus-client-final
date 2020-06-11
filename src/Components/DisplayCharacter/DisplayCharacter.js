@@ -48,7 +48,7 @@ class DisplayCharacter extends Component {
     const dt = character.date_created;
     let quest1 = questList[0];
     let quest2 = questList[1];
-    let award = 'Your awards will appear here.';
+    let award = null;
     let pic;
 
     if (questList !== []) {
@@ -57,10 +57,10 @@ class DisplayCharacter extends Component {
       } else if (quest2 && quest2.result) {
         award = robberhead;
       } else {
-        award = 'Your awards will appear here.';
+        award = null;
       }
     } else {
-      award = 'Your awards will appear here.';
+      award = null;
     }
 
     if (award === null) {
@@ -104,11 +104,15 @@ class DisplayCharacter extends Component {
             <br />
           </div>
         </section>
+        <label className='awardHead'>Awards</label>
         <div className='inventory'>{pic}</div>
         <div className='quests'>
           <h2>Quests</h2>
           <p id='disclaimer'>*Quests will be updated periodically*</p>
           <QuestButton quest={questList} />
+          <p id='note'>
+            <i>NOTE: Quests can only be completed once!</i>
+          </p>
         </div>
       </section>
     );

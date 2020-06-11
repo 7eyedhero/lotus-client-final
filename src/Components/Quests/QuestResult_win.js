@@ -51,7 +51,7 @@ export default class QuestResult_win extends Component {
         <p>You gained {quest.exp_value} experience points!</p>
         <input
           type='button'
-          value='Return home (returns to main page).'
+          value='Return home'
           onClick={(e) => {
             this.handleHome(e);
           }}

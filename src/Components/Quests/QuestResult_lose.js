@@ -39,7 +39,7 @@ export default class QuestResult_lose extends Component {
         <p>Humbled, you decide to go spend some time with yourself to recouperate...</p>
         <input
           type='button'
-          value='Think about your poor decision (returns to main page).'
+          value='Return home'
           onClick={(e) => {
             this.handleHome(e);
           }}

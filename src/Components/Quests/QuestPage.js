@@ -11,14 +11,13 @@ class QuestPage extends Component {
   static contextType = CharacterContext;
 
   componentDidMount() {
+    //Sets the quest to align with current user clicked quest.
     const user = TokenService.getInfoFromToken().user_id;
     const str = this.props.location.pathname;
     const str2 = str.split('/').pop();
     const page = parseInt(str2);
-    console.log(page - 1);
     this.context.clearError();
     TreeApiService.getMemberChara(user).then(this.context.setCharacter).catch(this.context.setError);
-
     QuestApiService.getCurrentQuest(page).then(this.context.setQuest).catch(this.context.setError);
   }
 
